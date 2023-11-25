@@ -4,19 +4,19 @@ from sklearn.preprocessing import StandardScaler
 import numpy as np 
 
 # Load the scaler parameters from the file
-#players_scaler_params = joblib.load("C:/Users/cnama/Desktop/IIPGH_project/players_scaler_params.joblib")
-#goalkeepers_scaler_params = joblib.load("C:/Users/cnama/Desktop/IIPGH_project/goalkeepers_scaler_params.joblib")
+players_scaler_params = joblib.load("players_scaler_params.joblib")
+goalkeepers_scaler_params = joblib.load("goalkeepers_scaler_params.joblib")
 
 
 # Create a new scaler and set its parameters
 new_players_scaler = StandardScaler()
 new_goalkeepers_scaler = StandardScaler()
 
-#new_players_scaler.mean_ = players_scaler_params['players_mean']
-#new_players_scaler.scale_ = players_scaler_params['players_scale']
+new_players_scaler.mean_ = players_scaler_params['players_mean']
+new_players_scaler.scale_ = players_scaler_params['players_scale']
 
-#new_goalkeepers_scaler.mean_ = goalkeepers_scaler_params['goalkeepers_mean']
-#new_goalkeepers_scaler.scale_ = goalkeepers_scaler_params['goalkeepers_scale']
+new_goalkeepers_scaler.mean_ = goalkeepers_scaler_params['goalkeepers_mean']
+new_goalkeepers_scaler.scale_ = goalkeepers_scaler_params['goalkeepers_scale']
 
 
 model_players = joblib.load("players_RandomForest")
