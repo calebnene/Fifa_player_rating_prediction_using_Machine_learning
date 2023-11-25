@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt 
 
 # Reading the training dataset
-goalkeepers = pd.read_csv("data/goalkeepers.csv")
-players = pd.read_csv("data/players.csv")
+goalkeepers = pd.read_csv("goalkeepers.csv")
+players = pd.read_csv("players.csv")
 
 def main():
 
