@@ -8,12 +8,15 @@ This project consists of three main parts:
 ## Part 1: Data Exploration and Analysis
 
 EDA was performed on the raw dataset 'players_21.csv'. 
+The jupyter notebook file where EDA and model training was done is 'player_rating.ipynb'
 The cleaned dataset above was split into the goalkeepers and players datasets - 
 'goalkeepers.csv' and 'players.csv' respectively. 
 
 ## Part 2: Model Training
 
-- [Description of Part 2]
+The goalkeepers and players dataset were both trained using 3 different algorithms; Naive Bayes, Random Forest and Linear Regression algorithms.
+The best model was Random Forest so that was saved under 'goalkeepers_RandomForest' and 'players_RandomForest' for the goalkeepers and players datasets respectvely and used for predictions. 
+Since the features were scaled, the scaled parameters were also saved in order to be used during deployment. The files are 'goalkeepers_scaler_params.joblib' and 'players_scaler_params.joblib'
 
 ## Part 3: Streamlit App for Prediction
 
