@@ -19,9 +19,8 @@ The best model was Random Forest so that was saved under 'goalkeepers_RandomFore
 Since the features were scaled, the scaled parameters were also saved in order to be used during deployment. The files are 'goalkeepers_scaler_params.joblib' and 'players_scaler_params.joblib'
 
 ## Part 3: Streamlit App for Prediction
-
-- [Description of Part 3]
-- [Instructions for Running the App]
+The streamlit app is multipage app consisting of the homepage and estimate ratings page both under the multipage_app folder.
+Run the homepage.py file in your terminal using streamlit run. 
 
 ## Dependencies
 
@@ -34,9 +33,9 @@ Since the features were scaled, the scaled parameters were also saved in order t
 - Install dependencies: `pip install -r requirements.txt`
 - Run the Streamlit app: `streamlit run Part3_Streamlit/app.py`
 
-## Contributors
+## Author
 
-- [Your Name]
+- Caleb Martey
 
 ## License
 
