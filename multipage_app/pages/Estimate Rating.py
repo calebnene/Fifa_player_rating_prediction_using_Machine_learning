@@ -19,8 +19,8 @@ new_goalkeepers_scaler = StandardScaler()
 #new_goalkeepers_scaler.scale_ = goalkeepers_scaler_params['goalkeepers_scale']
 
 
-#model_players = joblib.load("C:/Users/cnama/Desktop/IIPGH_project/players_RandomForest")
-#model_goalkeepers = joblib.load("C:/Users/cnama/Desktop/IIPGH_project/goalkeepers_RandomForest")
+model_players = joblib.load("players_RandomForest")
+model_goalkeepers = joblib.load("goalkeepers_RandomForest")
 
 def predict_goalkeeper(value_eur, wage_eur, goalkeeping_diving, goalkeeping_handling, goalkeeping_kicking, goalkeeping_positioning, goalkeeping_reflexes, goalkeeping_speed):
     scaled_params = new_goalkeepers_scaler.transform([[value_eur, wage_eur, goalkeeping_diving, goalkeeping_handling, goalkeeping_kicking, goalkeeping_positioning, goalkeeping_reflexes, goalkeeping_speed]])
