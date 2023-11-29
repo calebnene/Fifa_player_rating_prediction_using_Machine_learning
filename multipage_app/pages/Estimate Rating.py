@@ -4,8 +4,8 @@ from sklearn.preprocessing import StandardScaler
 import numpy as np 
 
 # Load the scaler parameters from the file
-players_scaler_params = joblib.load("players_scaler_params.joblib")
-goalkeepers_scaler_params = joblib.load("goalkeepers_scaler_params.joblib")
+players_scaler_params = joblib.load("players_scaler_params.joblib", mmap_mode=None)
+goalkeepers_scaler_params = joblib.load("goalkeepers_scaler_params.joblib", mmap_mode=None)
 
 
 # Create a new scaler and set its parameters
